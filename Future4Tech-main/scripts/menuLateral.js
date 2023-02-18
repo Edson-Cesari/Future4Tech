@@ -2,6 +2,7 @@ let menuLateral = document.querySelector("nav > ul");
 let botaoMenu = document.getElementById("menuRetratil");
 let tamanhoTela = window.screen.width;
 
+//correcao menu lateral
 function abrirMenu(){
     if(botaoMenu.checked){
         menuLateral.style.animation ="animacaoMenuON 1s linear forwards";
