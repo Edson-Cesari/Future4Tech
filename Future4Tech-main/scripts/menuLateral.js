@@ -2,20 +2,30 @@ let menuLateral = document.querySelector("nav > ul");
 let botaoMenu = document.getElementById("menuRetratil");
 let tamanhoTela = window.screen.width;
 
+function menuOpen(){
+    menuLateral.style.width="250px";
+    menuLateral.style.marginRight ="250px"
+}
+
+function menuClose(){
+    menuLateral.style.width="0px";
+    menuLateral.style.marginRight ="0px"
+}
+
 //correcao menu lateral
 function abrirMenu(){
     if(botaoMenu.checked){
-        menuLateral.style.animation ="animacaoMenuON 1s linear forwards";
+        menuOpen();
         
     }else{
-        menuLateral.style.animation ="animacaoMenuOFF 1s linear forwards";
+        menuClose();
         botaoMenu.checked=false;
     }
 }
 
 function fecharMenuRedirect(caminho){
     if(botaoMenu.checked){
-        menuLateral.style.animation ="animacaoMenuOFF 1s linear forwards";
+        
         botaoMenu.checked=false;  
         setTimeout(() => {
             redirecionar(caminho);
