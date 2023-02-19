@@ -262,7 +262,9 @@
     #radio6:checked ~ .first{
         margin-left: -119%;
     }
-    
+    .logotipoPequeno{
+        height: 50px;
+    }
 
     }
 
