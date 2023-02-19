@@ -9,7 +9,6 @@
     nav ul{
         width: auto;
     }
-   
 }
 @media screen And (max-width:850px){
     #informacoes{
@@ -35,6 +34,9 @@
     }
     .logoPrincipalPequeno{
         display: block;
+    }
+    .redeSocial{
+        display: none;
     }
    
     #menuRetratil{
