@@ -180,6 +180,7 @@ main{
     overflow: hidden;
     margin-top: 4em;
     margin-bottom: 1em;
+
 }
 
 .disparadorImagens li{
@@ -197,5 +198,8 @@ main{
 .disparadorImagens a:hover{
     color: var(--pretoPrincipal);
     background-color: var(--amareloHouver);
+ }
+ #btnSaibaMais{
+    cursor: pointer;
  }
 
