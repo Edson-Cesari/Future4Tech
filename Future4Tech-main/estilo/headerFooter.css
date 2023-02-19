@@ -22,9 +22,14 @@ header li{
     list-style: none;
     padding: 12px; 
 }
+
+.liRedesSocialMenu{
+    display: none;
+}
 a{
     text-decoration: none;
     color: var(--cinzaLetra);
+    white-space: nowrap;
 }
 a:hover{
     color: var(--amareloHouver);
