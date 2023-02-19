@@ -199,4 +199,7 @@ main{
     color: var(--pretoPrincipal);
     background-color: var(--amareloHouver);
  }
+ #btnSaibaMais{
+    cursor: pointer;
+ }
 
