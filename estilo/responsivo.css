@@ -201,7 +201,6 @@
     }
     .container{
         display: flex;
-        height: 180px;
         transform: translateX(0);
         transition: transform 0.5s ease-in-out;
     }
