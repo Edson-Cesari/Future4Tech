@@ -3,16 +3,24 @@ let botaoMenu = document.getElementById("menuRetratil");
 let tamanhoTela = window.screen.width;
 
 function menuOpen(){
-    menuLateral.style.width="250px";
-    menuLateral.style.marginRight ="250px"
+    menuLateral.style.width="300px";
+    menuLateral.style.transition = "all 0.75s ease";
 }
 
 function menuClose(){
     menuLateral.style.width="0px";
-    menuLateral.style.marginRight ="0px"
+    menuLateral.style.transition = "all 0.75s ease";
+    if(tamanhoTela >= 824){
+        menuLateral.style.width="";
+    }
+
 }
 
-//correcao menu lateral
+function redirecionar(caminho){
+    window.location.href=caminho;
+}
+
+
 function abrirMenu(){
     if(botaoMenu.checked){
         menuOpen();
@@ -25,15 +33,14 @@ function abrirMenu(){
 
 function fecharMenuRedirect(caminho){
     if(botaoMenu.checked){
-        
-        botaoMenu.checked=false;  
+        menuClose();
+        botaoMenu.checked=false;
+
         setTimeout(() => {
             redirecionar(caminho);
-        }, 1000);
+        }, 750);
     }else{
         redirecionar(caminho);
     }
 }
-function redirecionar(caminho){
-    window.location.href=caminho;
-}
+

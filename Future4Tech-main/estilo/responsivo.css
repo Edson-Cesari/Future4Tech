@@ -6,6 +6,10 @@
         display: block;
         
     }
+    nav ul{
+        width: auto;
+    }
+   
 }
 @media screen And (max-width:850px){
     #informacoes{
@@ -31,14 +35,14 @@
     }
     .logoPrincipalPequeno{
         display: block;
-        
     }
    
     #menuRetratil{
         display: block;
     }
-    
+
     nav ul{
+    width: 0px;
     position: absolute;
     border-end-start-radius: 10px;
     top:110px;
@@ -55,6 +59,7 @@
       display: block;
       margin: 0px 20px;
       margin-right: 50px;
+      
     }
     nav ul li:last-child{
         margin-bottom: 50px;
@@ -63,6 +68,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-wrap: nowrap;
         padding: 10px;
         color: white;
         gap: 10px;
@@ -73,7 +79,7 @@
     #iconeMenu{
         display: block;
     }
-  
+
 
     /*Menu hamburguer*/
     .menuHamburguer{
